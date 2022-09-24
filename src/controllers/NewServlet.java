@@ -31,7 +31,7 @@ public class NewServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // CSRF対策
-        request.setAttribute("task", new Task());
+        request.setAttribute("_token", request.getSession().getId());
 
         // おまじないとしてのインスタンスを生成
         request.setAttribute("task", new Task());
