@@ -8,13 +8,13 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebFilter;
 
 
 /**
  * Servlet implementation class EncodingFilter
  */
-@WebServlet("/*")
+@WebFilter("/*")
 public class EncodingFilter implements Filter {
 
 
